@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        section {
+            display: none;
+        }
+        
+        #container {
+            width: 600px;
+            /*            height: 400px;*/
+            background-color: lightblue;
+
+            border: solid;
+            overflow: auto;
+        }
+
+        #left,
+        #right {
+            width: 200px;
+            height: 200px;
+        }
+
+        #left {
+            background-color: rgba(255, 0, 0, 0.3);
+            float: left;
+        }
+
+        #right {
+            background-color: blue;
+            float: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="floats">
+        <div id="container">
+            <div id="left"></div>
+            <div id="right"></div>
+        </div>
+    </section>
+    
+    <section class="clear">
+        <div></div>
+    </section>
+</body>
+
+</html>

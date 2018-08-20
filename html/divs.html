@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        div {
+            animation-name: divs;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+        #one {
+            height: 100px;
+            width: 200px;
+            background-color: red;
+            display: inline-block;
+        }
+        #two {
+            height: 100px;
+            width: 200px;
+            background-color: blue;
+            display: inline-block;
+        }
+        
+        @keyframes divs {
+            50% {width: 1.5em;
+                height: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+    <div id='one'></div>
+    <div id='two'></div>
+</body>
+</html>

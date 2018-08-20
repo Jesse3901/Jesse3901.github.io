@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #face {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border: 5px solid black;
+            border-radius: 151px;
+        }
+        
+        #face:before {
+            content: '';
+            width: 10px;
+            height: 80px;
+            background-color: black;
+            display: inline-block;
+            border-radius: 25px;
+            position: relative;
+            top: 24px;
+            left: 89px;
+            box-shadow: 100px 0px 0px 0px black;
+        }
+        
+        #face:after {
+            content: '';
+            width: 184px;
+            height: 100px;
+            background-color: transparent;
+            display: inline-block;
+            border-bottom: 49px solid black;
+            border-bottom-left-radius: 92px;
+            border-bottom-right-radius: 92px;
+            position: relative;
+            top: 134px;
+            left: 44px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div id="face">
+    </div>
+</body>
+</html>

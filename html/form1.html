@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+
+        ::placeholder {
+            color: red;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method='get'>
+        <label for="">Username</label>
+        <input type="text" name='username' placeholder="username"> <br>
+        <label for="">Password</label>
+        <input type="password" name='password'><br>
+        <input type="radio" name='food' value='pizza'>pizza
+        <input type="radio" name='food' value='apple'>apple
+        <input type="radio" name='food' value='orange'>orange
+
+        <br>
+        <input type="checkbox" name='sub' value='email'>subscribe email
+        <input type="checkbox" name='sub' value='news'>subscribe news
+        <br>
+
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+
+        <input type="text" list='events'>
+        <datalist id='events'>
+            <option value="biking"></option>
+            <option value="swimming"></option>
+            <option value="running"></option>
+        </datalist>
+
+        <select name="" id="">
+	        <option value="toronto">Toronto</option>
+	        <option value="regina">Regina</option>
+	        <option value="london">London</option>
+	    </select>
+        <br>
+        
+        <br>
+        <meter min="1" max="6" value=4></meter>
+        <progress min="1" max="100" value=30 style="height:10px;"></progress>
+
+        <input type="number">
+        <input type="submit">
+        <input type="color">
+        <input type="date">
+        <input type="search">
+        <input type="datetime-local">
+
+        <!--    for when the user does not need to see the data, but it still needs to be sent to the server-->
+        <input type="hidden" name='hiddenInfo'>
+
+        <input type="range" min=1 max=6>
+
+        <input type="tel" pattern="\d{10}">
+
+    </form>
+</body>
+
+</html>

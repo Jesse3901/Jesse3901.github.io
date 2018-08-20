@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        .moustache {
+            width: 150px;
+            height: 150px;
+/*            background-color: black;*/
+            box-shadow: 200px 150px 0px, 305px 150px 0px;
+            border-radius: 100px;
+        }
+        
+        .moustache:before {
+            content: '';
+            width: 100px;
+            height: 200px;
+/*            background-color: red;*/
+            display: inline-block;
+            border-bottom: solid 104px black;
+            border-bottom-left-radius: 192px;
+        }
+    </style>
+</head>
+<body>
+    <div class="moustache"></div>
+</body>
+</html>

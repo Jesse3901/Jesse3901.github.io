@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        div {
+            border: solid 1px black;
+            
+            width: 500px;
+            height: 50px;
+        }
+        
+        #inline {
+            border: solid 1px red;
+        }
+        #inline_block {
+            border: solid 1px blue;
+            display: inline-block;
+        }
+        
+        #none {
+            display: none;
+            height: 50px;
+        }
+        
+        h3#invis {
+            visibility: hidden;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block element</h1>
+    <div></div>
+    
+    <ul>
+        <li>Width = container width</li>
+        <li>Height = 0</li>
+        <li>Can set dimensions (width, height)</li>
+    </ul>
+    
+    <h1>Inline</h1>
+    <span id='inline'></span>
+    
+    <ul>
+        <li>width = 0 by default</li>
+        <li>height = font-size</li>
+        <li>Cannot set dimesions</li>
+        <li>Can place multiple inline elements on the same line</li>
+    </ul>
+    
+    <h1>Inline-block</h1>
+    <span id='inline_block'></span>
+    
+    <ul>
+        <li>No width and no height</li>
+        <li>Can set dimensions</li>
+    </ul>
+    
+    <h1>None</h1>
+    <h3 id='none'>Nothing here...</h3>
+    
+    <h1>Invisible</h1>
+    <h3 id='invis'>I'm invisible, but still taking up space!</h3>
+</body>
+</html>
